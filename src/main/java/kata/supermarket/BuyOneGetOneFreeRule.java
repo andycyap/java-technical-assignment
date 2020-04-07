@@ -13,10 +13,12 @@ public class BuyOneGetOneFreeRule implements IRule {
 
     @Override
     public void apply(Basket basket) {
-        for(Item applicableItem : basket.items()) {
-            if(applicableItem instanceof BuyOneGetOneFreeRule) {
-                // TODO need to create a new item with zero price
-                basket.items().add(applicableItem);
+        if(basket != null) {
+            for(Item applicableItem : basket.items()) {
+                if(applicableItem instanceof BuyOneGetOneFreeRule) {
+                    // TODO need to create a new item with zero price
+                    basket.items().add(applicableItem);
+                }
             }
         }
     }

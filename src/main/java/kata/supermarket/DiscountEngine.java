@@ -10,6 +10,10 @@ public class DiscountEngine implements IDiscountEngine {
     private List<IRule> rules;
     private BigDecimal calculatedDiscount = BigDecimal.ZERO;
 
+    public DiscountEngine(Basket basket) {
+        this.basket = basket;
+    }
+
     @Override
     public List<IRule> getRules() {
         if(rules == null) {
