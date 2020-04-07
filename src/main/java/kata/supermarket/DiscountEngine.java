@@ -21,7 +21,7 @@ public class DiscountEngine implements IDiscountEngine {
     @Override
     public void execute() {
         for(IRule rule : rules) {
-            rule.apply(basket.items());
+            rule.apply(basket);
         }
     }
 
