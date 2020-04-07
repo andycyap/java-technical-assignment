@@ -30,10 +30,6 @@ public class Basket {
         this.discountEngine = discountEngine;
     }
 
-    public IDiscountEngine getDiscountEngine() {
-        return this.discountEngine;
-    }
-
     private class TotalCalculator {
         private final List<Item> items;
 
