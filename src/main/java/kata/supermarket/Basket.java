@@ -20,7 +20,7 @@ public class Basket {
         this.items.add(item);
     }
 
-    List<Item> items() {
+    public List<Item> items() {
         return Collections.unmodifiableList(items);
     }
 

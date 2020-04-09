@@ -1,6 +1,10 @@
-package kata.supermarket;
+package kata.discounts;
 
 import kata.discountengine.IRule;
+import kata.supermarket.Basket;
+import kata.supermarket.Item;
+import kata.supermarket.ItemByUnit;
+import kata.supermarket.ItemByWeight;
 
 public class BuyOneGetOneFreeRule implements IRule {
     Object t;

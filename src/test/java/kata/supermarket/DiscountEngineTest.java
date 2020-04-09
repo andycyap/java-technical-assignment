@@ -7,6 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import kata.discountengine.IDiscountEngine;
 import kata.discountengine.IRule;
+import kata.discounts.BuyOneGetOneFreeRule;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
