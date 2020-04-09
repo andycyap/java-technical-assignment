@@ -1,4 +1,4 @@
-package kata.supermarket;
+package kata.discountengine;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -17,7 +17,7 @@ public interface IDiscountEngine {
 
     /**
      * 
-     * @return Calculated discounts
+     * @return Calculated discounts that enough to offset the subtotal
      */
 	BigDecimal calculateDiscounts();
 }

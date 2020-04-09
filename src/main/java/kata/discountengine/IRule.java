@@ -1,12 +1,15 @@
-package kata.supermarket;
+package kata.discountengine;
 
 
 public interface IRule {
 
     /**
      * Search the list if Item and appy the rule if applicable
+     * 
      * @param list
      */
-	void apply(Basket basket);
+    void apply();
+
+    <T> void setSomething(T t);
 
 }

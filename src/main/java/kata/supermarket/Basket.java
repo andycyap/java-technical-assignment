@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import kata.discountengine.IDiscountEngine;
+
 public class Basket {
     private final List<Item> items;
     private IDiscountEngine discountEngine;
